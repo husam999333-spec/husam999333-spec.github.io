@@ -83,18 +83,4 @@
   lb.addEventListener("click", (e) => { if (e.target === lb || e.target.closest(".lb-x")) close(); });
   addEventListener("keydown", (e) => { if (e.key === "Escape" && !lb.hidden) close(); });
 
-  // Instagram embeds — load the official script only when the row is near the viewport
-  const ig = d.getElementById("ig-row");
-  if (ig) {
-    const load = () => {
-      if (window.instgrm) return window.instgrm.Embeds.process();
-      const sc = d.createElement("script");
-      sc.src = "https://www.instagram.com/embed.js"; sc.async = true;
-      d.body.appendChild(sc);
-    };
-    if ("IntersectionObserver" in window) {
-      const io2 = new IntersectionObserver((es) => { if (es.some((e) => e.isIntersecting)) { load(); io2.disconnect(); } }, { rootMargin: "600px 0px" });
-      io2.observe(ig);
-    } else load();
-  }
 })();

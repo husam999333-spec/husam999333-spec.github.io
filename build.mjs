@@ -122,12 +122,12 @@ function render(c) {
     })
     .join("");
 
-  const adDims = { "proof/meta-overview.webp": [1100, 495], "proof/top-campaign.webp": [1100, 465], "proof/conversations.webp": [1100, 427], "proof/audience.webp": [1100, 598] };
+  const adDims = { "proof/meta-overview.webp": [755, 334], "proof/top-campaign.webp": [900, 100], "proof/conversations.webp": [900, 92], "proof/audience.webp": [1100, 598] };
   const adsKpis = c.ads.kpis.map((k) => `<div class="kpi reveal"><b dir="ltr">${k.big}</b><span>${k.label}</span></div>`).join("");
   const adsShots = c.ads.shots
     .map((p) => {
       const [w, h] = adDims[p.src];
-      return `<figure class="shot reveal"><button class="zoom" data-full="${IMG}${p.src}" data-cap="${esc(p.cap)}">${img(p.src, p.cap, w, h)}</button><figcaption>${p.cap}</figcaption></figure>`;
+      return `<figure class="shot reveal"><button class="zoom" data-full="${IMG}${p.src}" data-cap="${esc(p.cap)}">${img(p.src.replace(".webp", "-c.webp"), p.cap, w, h)}</button><figcaption>${p.cap}</figcaption></figure>`;
     })
     .join("");
 
@@ -329,10 +329,10 @@ ${jsonLd(c)}
       <div><h3 class="h3">${c.creative.igTitle}</h3><p class="sec-sub">${c.creative.igSub}</p><p class="views">${icon("eye")}${c.creative.views}</p></div>
       <a class="btn btn-ghost" href="${SITE.festivalIg}" target="_blank" rel="noopener">${icon("instagram")} ${c.creative.igCta}</a>
     </div>
-    <div class="ig-row" id="ig-row" dir="ltr">
+    <div class="ig-grid" dir="ltr">
       ${SITE.igPosts
         .map(
-          (id) => `<div class="ig-card"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/${id}/?utm_source=ig_embed" data-instgrm-version="14"><a href="https://www.instagram.com/p/${id}/" target="_blank" rel="noopener">${icon("instagram")}<span>${c.creative.igOpen}</span></a></blockquote></div>`
+          (id, i) => `<a class="ig-tile reveal" style="--d:${(i % 4) * 60}ms" href="https://www.instagram.com/p/${id}/" target="_blank" rel="noopener" aria-label="${esc(c.creative.igOpen)}"><img src="${IMG}ig/${id}.webp" alt="" width="432" height="540" loading="lazy" decoding="async"><span class="ig-ov">${icon("instagram")}<span>${c.creative.igOpen}</span></span></a>`
         )
         .join("")}
     </div>
