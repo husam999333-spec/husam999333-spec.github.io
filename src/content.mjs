@@ -35,6 +35,7 @@ export const content = {
       award: "Employee of the Year", awardYear: "2025",
       capLoc: "Ajman, UAE", capRole: "Digital Marketing &amp; Creative", capName: "Husam Abdelfatah",
     },
+    brandsLabel: "Brands I've worked with",
     stats: [
       { n: 6, pre: "", suf: "+", label: "Years in digital marketing" },
       { n: 55, pre: "", suf: "K", label: "Followers grown from 4K" },
@@ -46,9 +47,8 @@ export const content = {
       kicker: "About me",
       title: "Strategy, creativity and technology — <em>in one person.</em>",
       p: [
-        "I'm Husam, a Digital Marketing Specialist with a background in Information Technology and hands-on experience in digital marketing since 2020.",
-        "I combine strategy, creativity and technology to build digital experiences that work — from paid advertising and social media management to content creation, design, website development and performance analysis.",
-        "I'm driven by results, passionate about creative work, and always learning the latest platforms, trends and AI-powered marketing tools.",
+        "I'm Husam, a Digital Marketing Specialist with an IT background, working hands-on in digital marketing since 2020.",
+        "I bring strategy, creativity and technology together — paid advertising, social media, content, design and websites — and measure everything by results, while keeping up with the latest platforms and AI-powered tools.",
       ],
       facts: [
         ["Based in", "Ajman, UAE"],
@@ -239,6 +239,7 @@ export const content = {
       award: "موظف العام", awardYear: "2025",
       capLoc: "عجمان، الإمارات", capRole: "تسويق رقمي وإبداع", capName: "حسام عبدالفتاح",
     },
+    brandsLabel: "علامات تجارية عملت معها",
     stats: [
       { n: 6, pre: "", suf: "+", label: "سنوات في التسويق الرقمي" },
       { n: 55, pre: "", suf: "K", label: "متابع بعد أن كانوا 4K" },
@@ -251,8 +252,7 @@ export const content = {
       title: "الاستراتيجية والإبداع والتقنية <em>في شخص واحد.</em>",
       p: [
         "أنا حسام، أخصائي تسويق رقمي بخلفية في تقنية المعلومات، وأعمل في التسويق الرقمي بشكل عملي منذ عام 2020.",
-        "أجمع بين الاستراتيجية والإبداع والتقنية لبناء تجارب رقمية تحقق أثرًا حقيقيًا، بدءًا من الإعلانات الممولة وإدارة السوشيال ميديا، مرورًا بصناعة المحتوى والتصميم، ووصولًا إلى تطوير المواقع وتحليل الأداء.",
-        "تحرّكني النتائج، وأعشق العمل الإبداعي، وأحرص دائمًا على مواكبة أحدث المنصات والتوجهات وأدوات التسويق المدعومة بالذكاء الاصطناعي.",
+        "أجمع بين الاستراتيجية والإبداع والتقنية — من الإعلانات الممولة والسوشيال ميديا إلى المحتوى والتصميم والمواقع — وأقيس كل شيء بالنتائج، مع مواكبة دائمة لأحدث المنصات وأدوات الذكاء الاصطناعي.",
       ],
       facts: [
         ["المقر", "عجمان، الإمارات"],

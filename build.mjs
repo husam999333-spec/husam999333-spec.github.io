@@ -91,6 +91,7 @@ function render(c) {
     .join("");
 
   const marqueeItems = ["Meta Ads", "Google Ads", "TikTok", "Snapchat", "Instagram", "YouTube", "WordPress", "Photoshop", "Premiere Pro", "Illustrator", "Google Analytics", "SEO", "AI Marketing"];
+  const BRANDS = ["Festival Land Ajman", "Happy Lands", "Kayla Medical Center", "Bariq"];
   const marquee = marqueeItems.map((m) => `<span>${m}</span><i aria-hidden="true">✦</i>`).join("");
 
   const services = c.services.items
@@ -98,7 +99,6 @@ function render(c) {
       (s, i) => `<article class="svc reveal" style="--d:${i * 60}ms">
         <div class="svc-top"><span class="svc-ic">${icon(s.icon)}</span><span class="svc-n">0${i + 1}</span></div>
         <h3>${s.t}</h3><p>${s.d}</p>
-        <ul class="tags">${s.tags.map((t) => `<li>${t}</li>`).join("")}</ul>
       </article>`
     )
     .join("");
@@ -278,7 +278,7 @@ ${jsonLd(c)}
   <div class="wrap"><ul class="stats">${stats}</ul></div>
 </section>
 
-<div class="marquee" aria-hidden="true"><div class="mq-track" dir="ltr">${marquee}${marquee}</div></div>
+<div class="brands"><div class="wrap brands-in"><p class="brands-k">${c.brandsLabel}</p><ul dir="ltr">${BRANDS.map((x) => `<li>${x}</li>`).join("")}</ul></div></div>
 
 <section class="sec" id="about">
   <div class="wrap about">
@@ -294,7 +294,6 @@ ${jsonLd(c)}
   <div class="wrap">
     <div class="sec-head">${head(c.services.kicker, c.services.title)}</div>
     <div class="svc-grid">${services}</div>
-    <ul class="also reveal">${c.services.also.map((a) => `<li>${a}</li>`).join("")}</ul>
   </div>
 </section>
 
@@ -306,7 +305,6 @@ ${jsonLd(c)}
     </div>
     <div class="cs-results">${csResults}</div>
     <div class="cs-grid">${csBlocks}</div>
-    <ul class="impact">${csImpact}</ul>
     <h3 class="h3 reveal">${cs.proofTitle}</h3>
     <div class="proof">${csProof}</div>
     <p class="note reveal">${cs.proofNote}</p>
@@ -326,10 +324,8 @@ ${jsonLd(c)}
     <div class="sec-head">${head(c.creative.kicker, c.creative.title)}<p class="sec-sub reveal">${c.creative.sub}</p></div>
     <h3 class="h3 reveal">${c.creative.design}</h3>
     <div class="posters">${posters}</div>
-    <div class="vid-head reveal"><h3 class="h3">${c.creative.video}</h3><p class="views">${icon("eye")}${c.creative.views}</p></div>
-    <div class="vids">${videos}</div>
     <div class="ig-head reveal">
-      <div><h3 class="h3">${c.creative.igTitle}</h3><p class="sec-sub">${c.creative.igSub}</p></div>
+      <div><h3 class="h3">${c.creative.igTitle}</h3><p class="sec-sub">${c.creative.igSub}</p><p class="views">${icon("eye")}${c.creative.views}</p></div>
       <a class="btn btn-ghost" href="${SITE.festivalIg}" target="_blank" rel="noopener">${icon("instagram")} ${c.creative.igCta}</a>
     </div>
     <div class="ig-row" id="ig-row" dir="ltr">
