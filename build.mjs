@@ -51,7 +51,7 @@ function jsonLd(c) {
     jobTitle: c.role,
     description: c.description,
     url: SITE.url + c.path,
-    image: `${SITE.url}${IMG}husam-profile.webp`,
+    image: `${SITE.url}${IMG}husam-front.webp`,
     email: `mailto:${SITE.email}`,
     telephone: SITE.phone,
     address: { "@type": "PostalAddress", addressLocality: "Ajman", addressCountry: "AE" },
@@ -230,7 +230,7 @@ function render(c) {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="${fonts}">
-<link rel="preload" as="image" href="${IMG}husam-hero.webp" fetchpriority="high">
+<link rel="preload" as="image" href="${IMG}husam-front.webp" fetchpriority="high">
 <link rel="stylesheet" href="/assets/css/style.css?v=${cssV}">
 ${jsonLd(c)}
 </head>
@@ -266,7 +266,7 @@ ${jsonLd(c)}
     </div>
     <div class="hero-pic">
       <div class="halo" aria-hidden="true"></div>
-      <img src="${IMG}husam-hero.webp" alt="${esc(c.hero.photoAlt)}" width="599" height="1400" fetchpriority="high">
+      <img src="${IMG}husam-front.webp" alt="${esc(c.hero.photoAlt)}" width="824" height="1194" fetchpriority="high">
       <div class="award-chip">${icon("award")}<span><b>${c.hero.award}</b><small>Festival Land Ajman · ${c.hero.awardYear}</small></span></div>
     </div>
   </div>
@@ -375,7 +375,7 @@ ${jsonLd(c)}
       <p class="lead reveal">${k.sub}</p>
       <ul class="clist">${contacts}</ul>
     </div>
-    <div class="contact-pic reveal"><img src="${IMG}husam-profile.webp" alt="${esc(k.photoAlt)}" width="795" height="900" loading="lazy"></div>
+    <div class="contact-pic reveal"><img src="${IMG}husam-hero.webp" alt="${esc(k.photoAlt)}" width="599" height="1400" loading="lazy"></div>
   </div>
 </section>
 </main>

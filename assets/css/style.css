@@ -446,3 +446,13 @@ html[lang="ar"] .motto { letter-spacing: 0; font-size: 14px; }
 .ig-chip span[dir] { display: inline-flex; align-items: center; color: var(--muted); }
 .ig-k { color: var(--dim); }
 @media (max-width: 640px) { .ig-card { flex-basis: 86%; } .ig-head .btn { width: 100%; justify-content: center; } }
+
+/* Front portrait in hero (head-and-shoulders) */
+.hero-pic img { max-height: 68vh; }
+.halo { inset: 8% 4% 10%; }
+.award-chip { bottom: 14%; }
+.contact-pic img { max-height: 620px; }
+.hero-pic img {
+  mask-image: radial-gradient(140% 100% at 50% 20%, #000 52%, transparent 74%);
+  -webkit-mask-image: radial-gradient(140% 100% at 50% 20%, #000 52%, transparent 74%);
+}

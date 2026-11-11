@@ -31,7 +31,7 @@ export const content = {
       sub: "6+ years planning paid campaigns, creating content and building websites — turning audience attention into measurable results. Most recently, I grew Festival Land Ajman from 4K to 55K followers in 12 months.",
       cta1: "See my work", cta2: "Download CV",
       badge: "Open to new opportunities",
-      photoAlt: "Husam Awad, Digital Marketing Specialist, in a dark suit with arms crossed",
+      photoAlt: "Husam Awad, Digital Marketing Specialist, in a navy suit and blue tie",
       award: "Employee of the Year", awardYear: "2025",
     },
     stats: [
@@ -171,7 +171,7 @@ export const content = {
           ],
         },
         {
-          when: "Freelance", role: "Digital Marketing & Creative Specialist", org: "Independent clients", where: "UAE",
+          when: "2020 — 2026", role: "Digital Marketing & Creative Specialist", org: "Freelance · Independent clients", where: "UAE",
           clients: [{ name: "Bariq", href: "https://www.instagram.com/bariq_44/", handle: "@bariq_44", what: "Paid advertising & social media management" }],
           clientsLabel: "Client",
           points: [
@@ -210,7 +210,7 @@ export const content = {
       sub: "Thank you for exploring my work. I'm always open to new opportunities, collaborations and creative challenges.",
       email: "Email", phone: "Phone (calls)", whatsapp: "WhatsApp", linkedin: "LinkedIn",
       linkedinVal: "Husam Abd Alfattah",
-      photoAlt: "Portrait of Husam Awad",
+      photoAlt: "Husam Awad in a dark suit with arms crossed",
     },
     footer: { motto: ["Strategy", "Creativity", "Technology", "Results"], rights: "All rights reserved.", top: "Back to top" },
     lightboxClose: "Close",
@@ -234,7 +234,7 @@ export const content = {
       sub: "أكثر من 6 سنوات في تخطيط الحملات الإعلانية الممولة، وصناعة المحتوى، وبناء المواقع، وتحويل اهتمام الجمهور إلى نتائج قابلة للقياس. وآخر إنجازاتي: تنمية جمهور فيستيفال لاند عجمان من 4 آلاف إلى 55 ألف متابع خلال 12 شهرًا.",
       cta1: "شاهد أعمالي", cta2: "تحميل السيرة الذاتية",
       badge: "متاح لفرص عمل جديدة",
-      photoAlt: "حسام عوض، أخصائي تسويق رقمي، ببدلة داكنة وذراعاه متشابكتان",
+      photoAlt: "حسام عوض، أخصائي تسويق رقمي، ببدلة كحلية وربطة عنق زرقاء",
       award: "موظف العام", awardYear: "2025",
     },
     stats: [
@@ -374,7 +374,7 @@ export const content = {
           ],
         },
         {
-          when: "عمل حر", role: "أخصائي تسويق رقمي ومحتوى إبداعي", org: "عملاء مستقلون", where: "الإمارات",
+          when: "2020 — 2026", role: "أخصائي تسويق رقمي ومحتوى إبداعي", org: "عمل حر · عملاء مستقلون", where: "الإمارات",
           clients: [{ name: "Bariq", href: "https://www.instagram.com/bariq_44/", handle: "@bariq_44", what: "الإعلانات الممولة وإدارة السوشيال ميديا" }],
           clientsLabel: "عميل",
           points: [
@@ -413,7 +413,7 @@ export const content = {
       sub: "شكرًا لاطلاعك على أعمالي. أنا منفتح دائمًا على الفرص الجديدة والتعاون والتحديات الإبداعية.",
       email: "البريد الإلكتروني", phone: "الهاتف (للمكالمات)", whatsapp: "واتساب", linkedin: "لينكدإن",
       linkedinVal: "Husam Abd Alfattah",
-      photoAlt: "صورة شخصية لحسام عوض",
+      photoAlt: "حسام عوض ببدلة داكنة",
     },
     footer: { motto: ["استراتيجية", "إبداع", "تقنية", "نتائج"], rights: "جميع الحقوق محفوظة.", top: "العودة للأعلى" },
     lightboxClose: "إغلاق",
