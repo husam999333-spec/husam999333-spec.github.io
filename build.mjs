@@ -39,6 +39,7 @@ const icon = (n, cls = "i") =>
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");
 const img = (src, alt, w, h, extra = "") =>
   `<img src="${IMG}${src}" alt="${esc(alt)}" width="${w}" height="${h}" loading="lazy" decoding="async" ${extra}>`;
+const LOGO_MARK = `<svg class="logo-mark" viewBox="0 0 862 577" aria-hidden="true"><path fill="currentColor" d="M0 0 L145 0 L145 207 L398 207 L523 0 L862 577 L707 577 L658 488 L436 488 L501 368 L595 368 L523 228 L332 577 L177 577 L323 329 L145 329 L145 577 L0 577 Z"/></svg>`;
 const head = (k, title) => `<p class="kicker reveal">${k}</p><h2 class="h2 reveal">${title}</h2>`;
 
 function jsonLd(c) {
@@ -242,7 +243,7 @@ ${jsonLd(c)}
 <div class="progress" aria-hidden="true"></div>
 <header class="nav" id="top">
   <div class="wrap nav-in">
-    <a class="logo" href="${c.path}" aria-label="${c.name}">${c.first.toUpperCase()}<span>${c.last.toUpperCase()}</span><i>.</i></a>
+    <a class="logo" href="${c.path}" aria-label="${c.name}">${LOGO_MARK}<span class="logo-name"><b>${c.first.toUpperCase()}</b><b>${c.last.toUpperCase()}</b></span></a>
     <nav class="links" id="menu" aria-label="Main">
       <a href="#about">${N.about}</a><a href="#services">${N.services}</a><a href="#work">${N.work}</a><a href="#experience">${N.experience}</a><a href="#contact">${N.contact}</a>
     </nav>

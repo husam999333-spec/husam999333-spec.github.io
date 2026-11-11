@@ -67,9 +67,11 @@ em { font-style: normal; color: var(--red); }
 }
 .nav.scrolled { background: rgba(10,10,11,.78); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-color: var(--line); }
 .nav-in { display: flex; align-items: center; justify-content: space-between; height: 72px; gap: 20px; }
-.logo { font-family: "Anton", var(--display); font-size: 22px; letter-spacing: .04em; }
-.logo span { color: var(--red); margin-inline-start: 6px; }
-.logo i { font-style: normal; color: var(--red); }
+.logo { display: inline-flex; align-items: center; gap: 12px; }
+.logo-mark { width: 46px; height: auto; color: var(--red); flex: none; transition: transform .4s var(--ease); }
+.logo:hover .logo-mark { transform: translateY(-2px); }
+.logo-name { display: flex; flex-direction: column; font-family: "Anton", var(--display); font-size: 17px; line-height: 1.05; letter-spacing: .06em; color: var(--text); }
+html[lang="ar"] .logo-name { font-family: inherit; font-weight: 800; font-size: 15px; line-height: 1.25; letter-spacing: 0; }
 html[lang="ar"] .logo { font-family: "Cairo", sans-serif; font-weight: 900; font-size: 24px; letter-spacing: 0; }
 .links { display: flex; gap: 30px; font-size: 14.5px; color: var(--muted); }
 .links a { position: relative; transition: color .2s; }
