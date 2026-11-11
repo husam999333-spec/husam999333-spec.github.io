@@ -16,11 +16,11 @@ export const SITE = {
 export const content = {
   en: {
     lang: "en", dir: "ltr", path: "/", other: "/ar/", otherLabel: "عربي",
-    title: "Husam Abdelfatah | Digital Marketing & Creative Specialist in the UAE",
+    title: "Husam Abd Alfattah | Digital Marketing & Creative Specialist in the UAE",
     description:
-      "Husam Abdelfatah is a Digital Marketing & Creative Specialist in the UAE with 6+ years in paid advertising, social media, content creation and WordPress websites. Grew Festival Land Ajman from 4K to 55K followers.",
+      "Husam Abd Alfattah is a Digital Marketing & Creative Specialist in the UAE with 6+ years in paid advertising, social media, content creation and WordPress websites. Grew Festival Land Ajman from 4K to 55K followers.",
     ogLocale: "en_US",
-    name: "Husam Abdelfatah", first: "Husam", last: "Abdelfatah",
+    name: "Husam Abd Alfattah", first: "Husam", last: "Abd Alfattah",
     role: "Digital Marketing & Creative Specialist",
     nav: { about: "About", services: "Services", work: "Work", experience: "Experience", contact: "Contact" },
     hire: "Let's talk",
@@ -31,9 +31,9 @@ export const content = {
       sub: "6+ years planning paid campaigns, creating content and building websites — turning audience attention into measurable results. Most recently, I grew Festival Land Ajman from 4K to 55K followers in 12 months.",
       cta1: "See my work", cta2: "Download CV",
       badge: "Open to new opportunities",
-      photoAlt: "Husam Abdelfatah, Digital Marketing Specialist, smiling in a navy suit and blue tie",
+      photoAlt: "Husam Abd Alfattah, Digital Marketing Specialist, smiling in a navy suit and blue tie",
       award: "Employee of the Year", awardYear: "2025",
-      capLoc: "Ajman, UAE", capRole: "Digital Marketing &amp; Creative", capName: "Husam Abdelfatah",
+      capLoc: "Ajman, UAE", capRole: "Digital Marketing &amp; Creative", capName: "Husam Abd Alfattah",
     },
     brandsLabel: "Brands I've worked with",
     stats: [
@@ -211,7 +211,7 @@ export const content = {
       sub: "Thank you for exploring my work. I'm always open to new opportunities, collaborations and creative challenges.",
       email: "Email", phone: "Phone (calls)", whatsapp: "WhatsApp", linkedin: "LinkedIn",
       linkedinVal: "Husam Abd Alfattah",
-      photoAlt: "Husam Abdelfatah in a black shirt, side profile",
+      photoAlt: "Husam Abd Alfattah in a black shirt, side profile",
     },
     footer: { motto: ["Strategy", "Creativity", "Technology", "Results"], rights: "All rights reserved.", top: "Back to top" },
     lightboxClose: "Close",

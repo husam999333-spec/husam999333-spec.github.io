@@ -47,8 +47,8 @@ function jsonLd(c) {
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": `${SITE.url}/#person`,
-    name: "Husam Abdelfatah",
-    alternateName: ["Husam Abd Alfattah", "Husam Awad", "Husam Abdelfatah Awad Alhassan", "حسام عوض", "حسام عبدالفتاح عوض"],
+    name: "Husam Abd Alfattah",
+    alternateName: ["Husam Abdelfatah", "Husam Awad", "Husam Abdelfatah Awad Alhassan", "حسام عوض", "حسام عبدالفتاح عوض"],
     jobTitle: c.role,
     description: c.description,
     url: SITE.url + c.path,
@@ -82,7 +82,7 @@ function render(c) {
   const fonts = isAr
     ? "https://fonts.googleapis.com/css2?family=Anton&family=Cairo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap"
     : "https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap";
-  const og = `${SITE.url}/assets/og-${c.lang}.jpg?v=2`;
+  const og = `${SITE.url}/assets/og-${c.lang}.jpg?v=3`;
   const N = c.nav;
 
   const stats = c.stats
@@ -207,7 +207,7 @@ function render(c) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${c.title}</title>
 <meta name="description" content="${esc(c.description)}">
-<meta name="author" content="Husam Abdelfatah">
+<meta name="author" content="Husam Abd Alfattah">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#0a0a0b">
 <link rel="canonical" href="${SITE.url}${c.path}">
@@ -215,7 +215,7 @@ function render(c) {
 <link rel="alternate" hreflang="ar" href="${SITE.url}/ar/">
 <link rel="alternate" hreflang="x-default" href="${SITE.url}/">
 <meta property="og:type" content="profile">
-<meta property="og:site_name" content="Husam Abdelfatah">
+<meta property="og:site_name" content="Husam Abd Alfattah">
 <meta property="og:title" content="${esc(c.title)}">
 <meta property="og:description" content="${esc(c.description)}">
 <meta property="og:url" content="${SITE.url}${c.path}">
@@ -224,7 +224,7 @@ function render(c) {
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="${c.ogLocale}">
 <meta property="profile:first_name" content="Husam">
-<meta property="profile:last_name" content="Abdelfatah">
+<meta property="profile:last_name" content="Abd Alfattah">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${esc(c.title)}">
 <meta name="twitter:description" content="${esc(c.description)}">
