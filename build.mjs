@@ -51,7 +51,7 @@ function jsonLd(c) {
     jobTitle: c.role,
     description: c.description,
     url: SITE.url + c.path,
-    image: `${SITE.url}${IMG}husam-front.webp`,
+    image: `${SITE.url}${IMG}husam-suit.webp`,
     email: `mailto:${SITE.email}`,
     telephone: SITE.phone,
     address: { "@type": "PostalAddress", addressLocality: "Ajman", addressCountry: "AE" },
@@ -230,7 +230,7 @@ function render(c) {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="${fonts}">
-<link rel="preload" as="image" href="${IMG}husam-front.webp" fetchpriority="high">
+<link rel="preload" as="image" href="${IMG}husam-suit.webp" fetchpriority="high">
 <link rel="stylesheet" href="/assets/css/style.css?v=${cssV}">
 ${jsonLd(c)}
 </head>
@@ -266,7 +266,7 @@ ${jsonLd(c)}
     </div>
     <figure class="hero-pic print">
       <div class="print-box"><span class="print-frame" aria-hidden="true"></span>
-      <div class="print-photo"><img src="${IMG}husam-front.webp" alt="${esc(c.hero.photoAlt)}" width="824" height="1194" fetchpriority="high"></div></div>
+      <div class="print-photo"><img src="${IMG}husam-suit.webp" alt="${esc(c.hero.photoAlt)}" width="690" height="862" fetchpriority="high"></div></div>
       <figcaption class="print-cap"><span>${c.hero.capLoc}</span><span class="on">${c.hero.capRole}</span></figcaption>
       <div class="award-chip">${icon("award")}<span><b>${c.hero.award}</b><small>Festival Land Ajman · ${c.hero.awardYear}</small></span></div>
     </figure>
@@ -376,7 +376,7 @@ ${jsonLd(c)}
       <p class="lead reveal">${k.sub}</p>
       <ul class="clist">${contacts}</ul>
     </div>
-    <figure class="contact-pic print reveal"><div class="print-box"><span class="print-frame" aria-hidden="true"></span><div class="print-photo"><img src="${IMG}husam-hero.webp" alt="${esc(k.photoAlt)}" width="599" height="1400" loading="lazy"></div></div><figcaption class="print-cap"><span>${c.hero.capName}</span><span class="on">${c.hero.capRole}</span></figcaption></figure>
+    <figure class="contact-pic print reveal"><div class="print-box"><span class="print-frame" aria-hidden="true"></span><div class="print-photo"><img src="${IMG}husam-front.webp" alt="${esc(k.photoAlt)}" width="824" height="1194" loading="lazy"></div></div><figcaption class="print-cap"><span>${c.hero.capName}</span><span class="on">${c.hero.capRole}</span></figcaption></figure>
   </div>
 </section>
 </main>
