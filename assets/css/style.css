@@ -156,7 +156,6 @@ html[lang="ar"] .h1 { font-weight: 900; text-transform: none; font-size: clamp(3
 .stat { padding: 26px 24px; border-inline-start: 1px solid var(--line); }
 .stat:first-child { border-inline-start: 0; }
 .stat-n { display: block; font-family: "Anton", var(--display); font-weight: 400; font-size: clamp(30px, 3.2vw, 44px); line-height: 1; letter-spacing: .01em; }
-html[lang="ar"] .stat-n { font-family: "Cairo", sans-serif; font-weight: 800; }
 .stat-n span:last-child { color: var(--red); }
 .stat-l { display: block; color: var(--muted); font-size: 14px; margin-top: 10px; line-height: 1.45; }
 
