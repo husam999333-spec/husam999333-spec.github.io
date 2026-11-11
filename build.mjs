@@ -82,7 +82,7 @@ function render(c) {
   const fonts = isAr
     ? "https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap"
     : "https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap";
-  const og = `${SITE.url}/assets/og-${c.lang}.jpg`;
+  const og = `${SITE.url}/assets/og-${c.lang}.jpg?v=2`;
   const N = c.nav;
 
   const stats = c.stats
