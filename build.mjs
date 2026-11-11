@@ -264,11 +264,12 @@ ${jsonLd(c)}
         <a class="btn btn-ghost" href="${SITE.cv}" download>${icon("download")} ${c.hero.cta2}</a>
       </div>
     </div>
-    <div class="hero-pic">
-      <div class="halo" aria-hidden="true"></div>
-      <img src="${IMG}husam-front.webp" alt="${esc(c.hero.photoAlt)}" width="824" height="1194" fetchpriority="high">
+    <figure class="hero-pic print">
+      <div class="print-box"><span class="print-frame" aria-hidden="true"></span>
+      <div class="print-photo"><img src="${IMG}husam-front.webp" alt="${esc(c.hero.photoAlt)}" width="824" height="1194" fetchpriority="high"></div></div>
+      <figcaption class="print-cap"><span>${c.hero.capLoc}</span><span class="on">${c.hero.capRole}</span></figcaption>
       <div class="award-chip">${icon("award")}<span><b>${c.hero.award}</b><small>Festival Land Ajman · ${c.hero.awardYear}</small></span></div>
-    </div>
+    </figure>
   </div>
   <div class="wrap"><ul class="stats">${stats}</ul></div>
 </section>
@@ -375,7 +376,7 @@ ${jsonLd(c)}
       <p class="lead reveal">${k.sub}</p>
       <ul class="clist">${contacts}</ul>
     </div>
-    <div class="contact-pic reveal"><img src="${IMG}husam-hero.webp" alt="${esc(k.photoAlt)}" width="599" height="1400" loading="lazy"></div>
+    <figure class="contact-pic print reveal"><div class="print-box"><span class="print-frame" aria-hidden="true"></span><div class="print-photo"><img src="${IMG}husam-hero.webp" alt="${esc(k.photoAlt)}" width="599" height="1400" loading="lazy"></div></div><figcaption class="print-cap"><span>${c.hero.capName}</span><span class="on">${c.hero.capRole}</span></figcaption></figure>
   </div>
 </section>
 </main>

@@ -33,6 +33,7 @@ export const content = {
       badge: "Open to new opportunities",
       photoAlt: "Husam Awad, Digital Marketing Specialist, in a navy suit and blue tie",
       award: "Employee of the Year", awardYear: "2025",
+      capLoc: "Ajman, UAE", capRole: "Digital Marketing &amp; Creative", capName: "Husam Awad",
     },
     stats: [
       { n: 6, pre: "", suf: "+", label: "Years in digital marketing" },
@@ -236,6 +237,7 @@ export const content = {
       badge: "متاح لفرص عمل جديدة",
       photoAlt: "حسام عوض، أخصائي تسويق رقمي، ببدلة كحلية وربطة عنق زرقاء",
       award: "موظف العام", awardYear: "2025",
+      capLoc: "عجمان، الإمارات", capRole: "تسويق رقمي وإبداع", capName: "حسام عوض",
     },
     stats: [
       { n: 6, pre: "", suf: "+", label: "سنوات في التسويق الرقمي" },
