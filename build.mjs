@@ -61,6 +61,8 @@ function jsonLd(c) {
     knowsAbout: c.knowsAbout,
     knowsLanguage: ["ar", "en"],
     sameAs: [SITE.linkedin],
+    alumniOf: { "@type": "CollegeOrUniversity", name: "Sudan Academy for Banking & Financial Sciences" },
+    hasCredential: c.education.certs.filter((x) => x.url).map((x) => ({ "@type": "EducationalOccupationalCredential", name: x.t, credentialCategory: "certificate", url: x.url, recognizedBy: { "@type": "Organization", name: x.org.split(" · ")[0] } })),
   };
   const page = {
     "@context": "https://schema.org",
@@ -180,7 +182,7 @@ function render(c) {
   const e = c.education;
   const certs = e.certs
     .map(
-      (x) => `<li class="cert reveal"><span class="cert-ic">${icon("cert")}</span><div><h3 dir="ltr">${x.t}</h3><p>${x.org} · ${x.when}</p>${x.id ? `<p class="cid">${e.idLabel}: <code>${x.id}</code></p>` : ""}</div></li>`
+      (x) => `<li class="cert reveal"><span class="cert-ic">${icon("cert")}</span><div class="cert-body">${x.kind ? `<span class="cert-kind">${x.kind}</span>` : ""}<h3 dir="ltr">${x.t}</h3><p><bdi dir="ltr">${x.org}</bdi> · <bdi>${x.when}</bdi></p>${x.id ? `<p class="cid">${e.idLabel}: <code>${x.id}</code></p>` : ""}</div>${x.url ? `<a class="cert-go" href="${x.url}" target="_blank" rel="noopener" aria-label="${e.verify}: ${esc(x.t)}">${e.verify} ${icon("arrow")}</a>` : ""}</li>`
     )
     .join("");
 

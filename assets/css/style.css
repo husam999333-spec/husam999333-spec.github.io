@@ -537,3 +537,13 @@ html[dir="rtl"] .progress { transform-origin: 100% 50%; }
 @media (max-width: 900px) { .hero-pic.print .award-chip { top: auto; bottom: 22%; inset-inline-start: -8%; } }
 @media (max-width: 640px) { .proof { grid-template-columns: 1fr; } .ig-card { height: 520px; } }
 .print-box { z-index: 1; } .hero-pic.print .award-chip { z-index: 5; }
+
+/* Certificates: type label + verify link */
+.cert { align-items: center; }
+.cert-body { flex: 1; min-width: 0; }
+.cert-kind { display: inline-block; margin-bottom: 6px; padding: 2px 9px; border-radius: 999px; font-size: 11.5px; font-weight: 600; letter-spacing: .02em; color: var(--red-hi); background: rgba(229,37,28,.1); border: 1px solid rgba(229,37,28,.3); }
+.cert-go { flex: none; display: inline-flex; align-items: center; gap: 6px; align-self: center; padding: 8px 14px; border-radius: 999px; border: 1px solid var(--line-2); font-size: 13.5px; font-weight: 600; transition: border-color .2s, background .2s, color .2s; }
+.cert-go .i { width: 14px; height: 14px; }
+.cert-go:hover { border-color: var(--red); background: var(--red); color: #fff; }
+html[dir="rtl"] .cert-go .i { transform: scaleX(-1); }
+@media (max-width: 640px) { .cert { flex-wrap: wrap; } .cert-go { margin-inline-start: 52px; } }
