@@ -1,4 +1,4 @@
-# Husam Awad — Portfolio
+# Husam Abdelfatah — Portfolio
 
 Bilingual (EN/AR) static portfolio, hosted on GitHub Pages.
 

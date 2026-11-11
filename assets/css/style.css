@@ -511,3 +511,29 @@ html[lang="ar"] .print-cap { font-family: inherit; font-size: 13px; letter-spaci
   .hero-pic.print .award-chip { inset-inline-start: -6%; bottom: 26%; }
 }
 @media (prefers-reduced-motion: reduce) { .print-frame, .print-photo img, .poster, .vid, .shot { transition: none; } }
+
+/* ===== Polish pass ===== */
+::selection { background: var(--red); color: #fff; }
+.progress { position: fixed; inset: 0 0 auto 0; height: 2px; z-index: 200; background: linear-gradient(90deg, var(--red), #ff6a3d); transform-origin: 0 50%; transform: scaleX(0); pointer-events: none; }
+html[dir="rtl"] .progress { transform-origin: 100% 50%; }
+
+/* Award chip sits on the frame's top corner, clear of the photo subject */
+.hero-pic.print .award-chip { top: 7%; bottom: auto; inset-inline-start: -23%; }
+
+/* Evidence screenshots: equal-height, framed like app windows */
+.proof { grid-template-columns: repeat(3, 1fr); align-items: stretch; }
+.shots { align-items: stretch; }
+.shot { display: flex; flex-direction: column; border-radius: 10px; }
+.shot .zoom { flex: 1; display: grid; place-items: center; aspect-ratio: 16 / 10; padding: 14px; background: #f4f5f7; border-bottom: 1px solid var(--line); }
+.shot .zoom img { width: 100%; height: 100%; object-fit: contain; border-radius: 4px; }
+.shot figcaption { border-top: 0; display: flex; align-items: center; gap: 10px; color: var(--text); font-weight: 500; }
+.shot figcaption::before { content: ""; flex: none; width: 6px; height: 6px; border-radius: 50%; background: var(--red); }
+
+/* Instagram embeds: trim the empty comment area, keep cards uniform */
+.ig-card { height: 560px; position: relative; border: 1px solid var(--line-2); }
+.ig-card::after { content: ""; position: absolute; inset: auto 0 0; height: 46px; background: linear-gradient(transparent, #fff); pointer-events: none; }
+
+@media (max-width: 1080px) { .proof { grid-template-columns: 1fr 1fr; } .proof .shot:first-child { grid-column: auto; max-width: none; } }
+@media (max-width: 900px) { .hero-pic.print .award-chip { top: auto; bottom: 22%; inset-inline-start: -8%; } }
+@media (max-width: 640px) { .proof { grid-template-columns: 1fr; } .ig-card { height: 520px; } }
+.print-box { z-index: 1; } .hero-pic.print .award-chip { z-index: 5; }

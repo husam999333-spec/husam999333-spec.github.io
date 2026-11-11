@@ -46,8 +46,8 @@ function jsonLd(c) {
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": `${SITE.url}/#person`,
-    name: "Husam Awad",
-    alternateName: ["Husam Abd Alfattah", "Husam Abdelfatah Awad Alhassan", "حسام عوض", "حسام عبدالفتاح عوض"],
+    name: "Husam Abdelfatah",
+    alternateName: ["Husam Abd Alfattah", "Husam Awad", "Husam Abdelfatah Awad Alhassan", "حسام عوض", "حسام عبدالفتاح عوض"],
     jobTitle: c.role,
     description: c.description,
     url: SITE.url + c.path,
@@ -203,7 +203,7 @@ function render(c) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${c.title}</title>
 <meta name="description" content="${esc(c.description)}">
-<meta name="author" content="Husam Awad">
+<meta name="author" content="Husam Abdelfatah">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#0a0a0b">
 <link rel="canonical" href="${SITE.url}${c.path}">
@@ -211,7 +211,7 @@ function render(c) {
 <link rel="alternate" hreflang="ar" href="${SITE.url}/ar/">
 <link rel="alternate" hreflang="x-default" href="${SITE.url}/">
 <meta property="og:type" content="profile">
-<meta property="og:site_name" content="Husam Awad">
+<meta property="og:site_name" content="Husam Abdelfatah">
 <meta property="og:title" content="${esc(c.title)}">
 <meta property="og:description" content="${esc(c.description)}">
 <meta property="og:url" content="${SITE.url}${c.path}">
@@ -220,7 +220,7 @@ function render(c) {
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="${c.ogLocale}">
 <meta property="profile:first_name" content="Husam">
-<meta property="profile:last_name" content="Awad">
+<meta property="profile:last_name" content="Abdelfatah">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${esc(c.title)}">
 <meta name="twitter:description" content="${esc(c.description)}">
@@ -236,6 +236,7 @@ ${jsonLd(c)}
 </head>
 <body>
 <a class="skip" href="#main">${c.skip}</a>
+<div class="progress" aria-hidden="true"></div>
 <header class="nav" id="top">
   <div class="wrap nav-in">
     <a class="logo" href="${c.path}" aria-label="${c.name}">${c.first.toUpperCase()}<span>${c.last.toUpperCase()}</span><i>.</i></a>
@@ -376,7 +377,7 @@ ${jsonLd(c)}
       <p class="lead reveal">${k.sub}</p>
       <ul class="clist">${contacts}</ul>
     </div>
-    <figure class="contact-pic print reveal"><div class="print-box"><span class="print-frame" aria-hidden="true"></span><div class="print-photo"><img src="${IMG}husam-front.webp" alt="${esc(k.photoAlt)}" width="824" height="1194" loading="lazy"></div></div><figcaption class="print-cap"><span>${c.hero.capName}</span><span class="on">${c.hero.capRole}</span></figcaption></figure>
+    <figure class="contact-pic print reveal"><div class="print-box"><span class="print-frame" aria-hidden="true"></span><div class="print-photo"><img src="${IMG}husam-profile.webp" alt="${esc(k.photoAlt)}" width="795" height="900" loading="lazy"></div></div><figcaption class="print-cap"><span>${c.hero.capName}</span><span class="on">${c.hero.capRole}</span></figcaption></figure>
   </div>
 </section>
 </main>

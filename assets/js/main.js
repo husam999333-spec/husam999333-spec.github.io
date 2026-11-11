@@ -5,7 +5,11 @@
   const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   // Sticky nav background
-  const onScroll = () => nav.classList.toggle("scrolled", scrollY > 20);
+  const bar = d.querySelector(".progress");
+  const onScroll = () => {
+    nav.classList.toggle("scrolled", scrollY > 20);
+    if (bar) { const max = d.documentElement.scrollHeight - innerHeight; bar.style.transform = `scaleX(${max > 0 ? Math.min(1, scrollY / max) : 0})`; }
+  };
   onScroll();
   addEventListener("scroll", onScroll, { passive: true });
 
