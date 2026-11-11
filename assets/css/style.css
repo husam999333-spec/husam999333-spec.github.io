@@ -424,3 +424,25 @@ html[lang="ar"] .motto { letter-spacing: 0; font-size: 14px; }
   .reveal { opacity: 1; transform: none; }
   .ln > span { transform: none; }
 }
+
+/* ===== Instagram embeds & job chips ===== */
+.ig-head { display: flex; justify-content: space-between; align-items: end; gap: 20px; flex-wrap: wrap; margin: 64px 0 22px; }
+.ig-head .h3 { margin: 0 0 4px; }
+.ig-head .sec-sub { margin-top: 6px; font-size: 16px; }
+.ig-row { display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 14px; scrollbar-width: thin; scrollbar-color: var(--red) transparent; }
+.ig-row::-webkit-scrollbar { height: 6px; }
+.ig-row::-webkit-scrollbar-thumb { background: var(--red); border-radius: 6px; }
+.ig-card { flex: 0 0 340px; scroll-snap-align: start; border-radius: 14px; overflow: hidden; background: #fff; min-height: 420px; }
+.ig-card .instagram-media { margin: 0 !important; min-width: 0 !important; width: 100% !important; max-width: 100% !important; border: 0 !important; border-radius: 14px !important; box-shadow: none !important; }
+.ig-card iframe { margin: 0 !important; min-width: 0 !important; width: 100% !important; border-radius: 14px !important; }
+.ig-card blockquote:not(.instagram-media-rendered) { min-height: 420px; display: grid; place-items: center; background: var(--card); padding: 0; }
+.ig-card blockquote a { display: flex; flex-direction: column; align-items: center; gap: 12px; color: var(--muted); font-size: 14px; padding: 30px; text-align: center; }
+.ig-card blockquote a .i { width: 40px; height: 40px; color: var(--red-hi); }
+.job-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.job-tags .badge-award { margin-top: 0; }
+.ig-chip { display: inline-flex; align-items: center; gap: 7px; padding: 7px 14px; border-radius: 999px; border: 1px solid var(--line-2); font-size: 14px; transition: border-color .2s, background .2s; }
+.ig-chip:hover { border-color: var(--red); background: var(--red-soft); }
+.ig-chip .i { width: 16px; height: 16px; color: var(--red-hi); vertical-align: -3px; margin-inline-end: 4px; }
+.ig-chip span[dir] { display: inline-flex; align-items: center; color: var(--muted); }
+.ig-k { color: var(--dim); }
+@media (max-width: 640px) { .ig-card { flex-basis: 86%; } .ig-head .btn { width: 100%; justify-content: center; } }

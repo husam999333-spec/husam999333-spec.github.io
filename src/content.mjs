@@ -8,6 +8,9 @@ export const SITE = {
   whatsappDisplay: "+971 55 872 6441",
   linkedin: "https://www.linkedin.com/in/husam-abd-alfattah-a73365259/",
   cv: "/assets/Husam-Awad-CV.pdf",
+  festivalIg: "https://www.instagram.com/ajman_festivalland/",
+  bariqIg: "https://www.instagram.com/bariq_44/",
+  igPosts: ["DYuYT4kDIJL", "DW3qS_aloeO", "DWEwn_jAVRH", "DWExZFBDKD0", "DWEvINQjrho", "DU3cKl1DlyQ", "DSfwdR-k4Zy", "DRsIvsrk-n0"],
 };
 
 export const content = {
@@ -79,7 +82,7 @@ export const content = {
       blocks: [
         { t: "The challenge", d: "Low online presence, limited brand awareness, and a need to attract more visitors and engagement in a competitive market." },
         { t: "The solution", d: "Data-driven strategy, high-impact content, targeted advertising and active community engagement across every digital channel." },
-        { t: "My role", list: ["Digital strategy & planning", "Content strategy & creation", "Paid media management", "Analytics & performance tracking"] },
+        { t: "My role", list: ["Paid advertising management", "Website management", "Design & video content", "Influencer collaborations", "Analytics & performance tracking"] },
       ],
       impact: [
         ["Strong brand visibility", "Festival Land became a top-of-mind destination in Ajman."],
@@ -118,6 +121,11 @@ export const content = {
       sub: "Good content connects. Great content converts.",
       design: "Design work", video: "Video content",
       views: "Up to 4M views on a single video",
+      igTitle: "Live on Instagram",
+      igSub: "Real posts I designed, produced or promoted for Festival Land Ajman.",
+      igCta: "View Festival Land on Instagram",
+      igLoading: "Loading Instagram post…",
+      igOpen: "View this post on Instagram",
       posters: [
         { src: "work/lavita.webp", alt: "La Vita Music live at Festival Land Ajman event poster" },
         { src: "work/eid-adha.webp", alt: "Eid Al Adha greeting design for Festival Land Ajman" },
@@ -153,17 +161,21 @@ export const content = {
         {
           when: "2023 — Present", role: "Digital Marketing Specialist", org: "Festival Land Ajman", where: "Ajman, UAE",
           badge: "Employee of the Year 2025",
+          link: { href: "https://www.instagram.com/ajman_festivalland/", label: "@ajman_festivalland" },
           points: [
-            "Developed and executed digital marketing strategies across multiple platforms to grow brand awareness and engagement.",
-            "Planned, launched and optimized paid campaigns on Meta Ads and Google Ads — 100+ campaigns and AED 200K+ in seasonal budgets.",
-            "Managed social media end to end: content planning, publishing, community engagement and performance analysis.",
-            "Designed marketing materials and produced promotional videos for campaigns and social platforms.",
-            "Coordinated influencer collaborations and promotional partnerships to expand reach.",
+            "Led all paid advertising — planned, launched and optimized 100+ campaigns on Meta Ads and Google Ads with AED 200K+ in seasonal budgets.",
+            "Managed the official website (festivalland.ae): content, updates, performance and SEO.",
+            "Designed marketing visuals and produced promotional videos for campaigns and social platforms.",
+            "Managed collaborations with all the influencers and bloggers featured on the brand's Instagram page.",
+            "Developed digital marketing strategies and tracked performance across platforms to grow awareness and engagement.",
           ],
         },
         {
-          when: "Freelance", role: "Digital Marketing & Creative Specialist", org: "Independent clients", where: "Remote",
+          when: "Freelance", role: "Digital Marketing & Creative Specialist", org: "Independent clients", where: "UAE",
+          clients: [{ name: "Bariq", href: "https://www.instagram.com/bariq_44/", handle: "@bariq_44", what: "Paid advertising & social media management" }],
+          clientsLabel: "Client",
           points: [
+            "Managed paid advertising campaigns and social media accounts for Bariq (@bariq_44).",
             "Delivered digital marketing, social media management, graphic design and paid advertising for clients in the jewelry, real estate and fashion industries.",
           ],
         },
@@ -273,7 +285,7 @@ export const content = {
       blocks: [
         { t: "التحدي", d: "حضور رقمي ضعيف، ووعي محدود بالعلامة التجارية، وحاجة لجذب مزيد من الزوار والتفاعل في سوق تنافسي." },
         { t: "الحل", d: "استراتيجية مبنية على البيانات، ومحتوى عالي التأثير، وإعلانات موجّهة، وتفاعل نشط مع المجتمع عبر جميع القنوات الرقمية." },
-        { t: "دوري", list: ["التخطيط والاستراتيجية الرقمية", "استراتيجية المحتوى وإنتاجه", "إدارة الإعلانات الممولة", "التحليلات ومتابعة الأداء"] },
+        { t: "دوري", list: ["إدارة الإعلانات الممولة", "إدارة الموقع الإلكتروني", "التصاميم والفيديوهات", "التعاون مع المؤثرين", "التحليلات ومتابعة الأداء"] },
       ],
       impact: [
         ["حضور قوي للعلامة", "أصبح فيستيفال لاند الوجهة الأولى في أذهان جمهور عجمان."],
@@ -312,6 +324,11 @@ export const content = {
       sub: "المحتوى الجيد يصنع التواصل، والمحتوى العظيم يصنع المبيعات.",
       design: "تصاميم", video: "فيديوهات",
       views: "حتى 4 ملايين مشاهدة لفيديو واحد",
+      igTitle: "من إنستغرام مباشرة",
+      igSub: "منشورات حقيقية صمّمتها أو أنتجتها أو روّجت لها لفيستيفال لاند عجمان.",
+      igCta: "صفحة فيستيفال لاند على إنستغرام",
+      igLoading: "جارٍ تحميل المنشور…",
+      igOpen: "عرض المنشور على إنستغرام",
       posters: [
         { src: "work/lavita.webp", alt: "إعلان حفل La Vita Music في فيستيفال لاند عجمان" },
         { src: "work/eid-adha.webp", alt: "تصميم تهنئة عيد الأضحى لفيستيفال لاند عجمان" },
@@ -347,17 +364,21 @@ export const content = {
         {
           when: "2023 — حتى الآن", role: "أخصائي تسويق رقمي", org: "فيستيفال لاند عجمان", where: "عجمان، الإمارات",
           badge: "موظف العام 2025",
+          link: { href: "https://www.instagram.com/ajman_festivalland/", label: "@ajman_festivalland" },
           points: [
-            "وضع وتنفيذ استراتيجيات التسويق الرقمي عبر منصات متعددة لزيادة الوعي بالعلامة التجارية والتفاعل.",
-            "تخطيط الحملات الممولة على منصتي Meta Ads و Google Ads وإطلاقها وتحسينها: أكثر من 100 حملة وميزانيات موسمية تجاوزت 200 ألف درهم.",
-            "إدارة السوشيال ميديا بالكامل: تخطيط المحتوى، والنشر، والتفاعل مع الجمهور، وتحليل الأداء.",
+            "المسؤول عن جميع الإعلانات الممولة: تخطيط وإطلاق وتحسين أكثر من 100 حملة على منصتَي <bdi>Meta Ads</bdi> و<bdi>Google Ads</bdi> بميزانيات موسمية تجاوزت 200 ألف درهم.",
+            "إدارة الموقع الرسمي <bdi>festivalland.ae</bdi>: المحتوى والتحديثات والأداء وتحسين الظهور في محركات البحث.",
             "تصميم المواد التسويقية وإنتاج الفيديوهات الترويجية للحملات ومنصات التواصل.",
-            "التنسيق مع المؤثرين وإدارة الشراكات الترويجية لتوسيع الوصول.",
+            "إدارة التعاون مع جميع المؤثرين والبلوجرز الظاهرين في صفحة إنستغرام الخاصة بالعلامة.",
+            "وضع استراتيجيات التسويق الرقمي ومتابعة الأداء عبر المنصات لزيادة الوعي والتفاعل.",
           ],
         },
         {
-          when: "عمل حر", role: "أخصائي تسويق رقمي ومحتوى إبداعي", org: "عملاء مستقلون", where: "عن بُعد",
+          when: "عمل حر", role: "أخصائي تسويق رقمي ومحتوى إبداعي", org: "عملاء مستقلون", where: "الإمارات",
+          clients: [{ name: "Bariq", href: "https://www.instagram.com/bariq_44/", handle: "@bariq_44", what: "الإعلانات الممولة وإدارة السوشيال ميديا" }],
+          clientsLabel: "عميل",
           points: [
+            "إدارة الحملات الإعلانية الممولة وحسابات السوشيال ميديا لعلامة <bdi>Bariq</bdi> (<bdi>@bariq_44</bdi>).",
             "تقديم خدمات التسويق الرقمي وإدارة السوشيال ميديا والتصميم الجرافيكي والإعلانات الممولة لعملاء في قطاعات المجوهرات والعقارات والأزياء.",
           ],
         },

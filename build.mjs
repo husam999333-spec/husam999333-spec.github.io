@@ -30,6 +30,7 @@ const ICONS = {
   cert: '<rect x="3" y="4" width="18" height="13" rx="2"/><path d="M7 9h10M7 12h6"/><circle cx="17" cy="17" r="3"/><path d="m15.5 19.5-.5 3 2-1 2 1-.5-3"/>',
   cap: '<path d="m2 9 10-5 10 5-10 5L2 9Z"/><path d="M6 11v5c3 2.5 9 2.5 12 0v-5M22 9v6"/>',
   menu: '<path d="M4 7h16M4 12h16M4 17h16"/>',
+  instagram: '<rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/>',
   close: '<path d="M6 6l12 12M18 6 6 18"/>',
 };
 const icon = (n, cls = "i") =>
@@ -161,7 +162,11 @@ function render(c) {
         <div class="job-main">
           <h3>${j.role}</h3>
           <p class="job-org">${j.org} <span>· ${j.where}</span></p>
+          <div class="job-tags">
           ${j.badge ? `<p class="badge-award">${icon("award")}${j.badge}</p>` : ""}
+          ${j.link ? `<a class="ig-chip" href="${j.link.href}" target="_blank" rel="noopener" dir="ltr">${icon("instagram")}${j.link.label}</a>` : ""}
+          ${(j.clients || []).map((cl) => `<a class="ig-chip" href="${cl.href}" target="_blank" rel="noopener"><span class="ig-k">${j.clientsLabel}:</span> <b>${cl.name}</b> <span dir="ltr">${icon("instagram")}${cl.handle}</span></a>`).join("")}
+          </div>
           <ul>${j.points.map((p) => `<li>${p}</li>`).join("")}</ul>
         </div>
       </article>`
@@ -318,6 +323,17 @@ ${jsonLd(c)}
     <div class="posters">${posters}</div>
     <div class="vid-head reveal"><h3 class="h3">${c.creative.video}</h3><p class="views">${icon("eye")}${c.creative.views}</p></div>
     <div class="vids">${videos}</div>
+    <div class="ig-head reveal">
+      <div><h3 class="h3">${c.creative.igTitle}</h3><p class="sec-sub">${c.creative.igSub}</p></div>
+      <a class="btn btn-ghost" href="${SITE.festivalIg}" target="_blank" rel="noopener">${icon("instagram")} ${c.creative.igCta}</a>
+    </div>
+    <div class="ig-row" id="ig-row" dir="ltr">
+      ${SITE.igPosts
+        .map(
+          (id) => `<div class="ig-card"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/${id}/?utm_source=ig_embed" data-instgrm-version="14"><a href="https://www.instagram.com/p/${id}/" target="_blank" rel="noopener">${icon("instagram")}<span>${c.creative.igOpen}</span></a></blockquote></div>`
+        )
+        .join("")}
+    </div>
   </div>
 </section>
 
