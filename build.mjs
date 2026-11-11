@@ -180,9 +180,10 @@ function render(c) {
     .join("");
 
   const e = c.education;
+  const certThumb = (k, cap, w, h) => `<button class="cert-pic zoom" data-full="${IMG}certs/${k}.webp" data-cap="${esc(cap)}" aria-label="${esc(e.view)}: ${esc(cap)}"><img src="${IMG}certs/${k}-t.webp" alt="${esc(cap)}" width="${w}" height="${h}" loading="lazy" decoding="async"></button>`;
   const certs = e.certs
     .map(
-      (x) => `<li class="cert reveal"><span class="cert-ic">${icon("cert")}</span><div class="cert-body">${x.kind ? `<span class="cert-kind">${x.kind}</span>` : ""}<h3 dir="ltr">${x.t}</h3><p><bdi dir="ltr">${x.org}</bdi> · <bdi>${x.when}</bdi></p>${x.id ? `<p class="cid">${e.idLabel}: <code>${x.id}</code></p>` : ""}</div>${x.url ? `<a class="cert-go" href="${x.url}" target="_blank" rel="noopener" aria-label="${e.verify}: ${esc(x.t)}">${e.verify} ${icon("arrow")}</a>` : ""}</li>`
+      (x) => `<li class="cert reveal${x.img ? " has-img" : ""}">${x.img ? certThumb(x.img, x.t, 640, 494) : `<span class="cert-ic">${icon("cert")}</span>`}<div class="cert-body">${x.kind ? `<span class="cert-kind">${x.kind}</span>` : ""}<h3 dir="ltr">${x.t}</h3><p><bdi dir="ltr">${x.org}</bdi> · <bdi>${x.when}</bdi></p>${x.id ? `<p class="cid">${e.idLabel}: <code>${x.id}</code></p>` : ""}</div>${x.url ? `<a class="cert-go" href="${x.url}" target="_blank" rel="noopener" aria-label="${e.verify}: ${esc(x.t)}">${e.verify} ${icon("arrow")}</a>` : ""}</li>`
     )
     .join("");
 
@@ -366,6 +367,7 @@ ${jsonLd(c)}
   <div class="wrap two">
     <div>${head(e.kicker, e.title)}
       <div class="degree reveal"><span class="cert-ic">${icon("cap")}</span><div><h3>${e.degree.t}</h3><p>${e.degree.org}</p><p class="cid">${e.degree.when}</p></div></div>
+      <div class="degree-pic reveal">${certThumb(e.degree.img, e.degree.t, 449, 640)}</div>
     </div>
     <ul class="certs">${certs}</ul>
   </div>

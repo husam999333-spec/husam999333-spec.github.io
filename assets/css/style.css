@@ -547,3 +547,16 @@ html[dir="rtl"] .progress { transform-origin: 100% 50%; }
 .cert-go:hover { border-color: var(--red); background: var(--red); color: #fff; }
 html[dir="rtl"] .cert-go .i { transform: scaleX(-1); }
 @media (max-width: 640px) { .cert { flex-wrap: wrap; } .cert-go { margin-inline-start: 52px; } }
+
+/* Certificate thumbnails (open in lightbox) */
+.cert.has-img { gap: 20px; }
+.cert-pic { flex: none; position: relative; width: 132px; aspect-ratio: 640 / 494; border-radius: 6px; overflow: hidden; border: 1px solid var(--line-2); background: #fff; cursor: zoom-in; transition: border-color .25s, transform .35s var(--ease); }
+.cert-pic img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s var(--ease); }
+.cert-pic::after { content: "⤢"; position: absolute; inset: auto 6px 6px auto; width: 22px; height: 22px; display: grid; place-items: center; border-radius: 50%; background: rgba(10,10,11,.75); color: #fff; font-size: 12px; opacity: 0; transition: opacity .25s; }
+html[dir="rtl"] .cert-pic::after { inset: auto auto 6px 6px; }
+.cert-pic:hover { border-color: var(--red); transform: translateY(-2px); }
+.cert-pic:hover img { transform: scale(1.06); }
+.cert-pic:hover::after { opacity: 1; }
+.degree-pic { margin-top: 16px; }
+.degree-pic .cert-pic { width: 100%; max-width: 300px; aspect-ratio: 449 / 640; }
+@media (max-width: 640px) { .cert-pic { width: 96px; } .cert-go { margin-inline-start: 116px; } }
