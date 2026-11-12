@@ -16,9 +16,9 @@ export const SITE = {
 export const content = {
   en: {
     lang: "en", dir: "ltr", path: "/", other: "/ar/", otherLabel: "عربي",
-    title: "Husam Abd Alfattah | Digital Marketing & Creative Specialist in the UAE",
+    title: "Husam Abd Alfattah | Digital Marketing & Creative Specialist in Saudi Arabia",
     description:
-      "Husam Abd Alfattah is a Digital Marketing & Creative Specialist in the UAE with 6+ years in paid advertising, social media, content creation and WordPress websites. Grew Festival Land Ajman from 4K to 55K followers.",
+      "Husam Abd Alfattah is a Digital Marketing & Creative Specialist based in Saudi Arabia with 6+ years in paid advertising, social media, content creation and WordPress websites. Grew Festival Land Ajman from 4K to 55K followers.",
     ogLocale: "en_US",
     name: "Husam Abd Alfattah", first: "Husam", last: "Abd Alfattah",
     role: "Digital Marketing & Creative Specialist",
@@ -26,14 +26,14 @@ export const content = {
     hire: "Let's talk",
     skip: "Skip to content",
     hero: {
-      eyebrow: "Digital Marketing & Creative Specialist · UAE",
+      eyebrow: "Digital Marketing & Creative Specialist · Saudi Arabia",
       title: ["Turning ideas into", "digital experiences", "that <em>grow brands.</em>"],
       sub: "6+ years planning paid campaigns, creating content and building websites — turning audience attention into measurable results. Most recently, I grew Festival Land Ajman from 4K to 55K followers in 12 months.",
       cta1: "See my work", cta2: "Download CV",
       badge: "Open to new opportunities",
       photoAlt: "Husam Abd Alfattah, Digital Marketing Specialist, smiling in a navy suit and blue tie",
       award: "Employee of the Year", awardYear: "2025",
-      capLoc: "Ajman, UAE", capRole: "Digital Marketing &amp; Creative", capName: "Husam Abd Alfattah",
+      capLoc: "Saudi Arabia", capRole: "Digital Marketing &amp; Creative", capName: "Husam Abd Alfattah",
     },
     brandsLabel: "Brands I've worked with",
     stats: [
@@ -51,7 +51,7 @@ export const content = {
         "I bring strategy, creativity and technology together — paid advertising, social media, content, design and websites — and measure everything by results, while keeping up with the latest platforms and AI-powered tools.",
       ],
       facts: [
-        ["Based in", "Ajman, UAE"],
+        ["Based in", "Saudi Arabia"],
         ["Currently", "Festival Land Ajman"],
         ["Background", "B.Sc. Information Technology"],
         ["Languages", "Arabic · English"],
@@ -220,24 +220,24 @@ export const content = {
 
   ar: {
     lang: "ar", dir: "rtl", path: "/ar/", other: "/", otherLabel: "EN",
-    title: "حسام عبدالفتاح | أخصائي تسويق رقمي وصناعة محتوى في الإمارات",
+    title: "حسام عبدالفتاح | أخصائي تسويق رقمي وصناعة محتوى في السعودية",
     description:
-      "حسام عبدالفتاح، أخصائي تسويق رقمي وصناعة محتوى في الإمارات بخبرة تزيد عن 6 سنوات في الإعلانات الممولة وإدارة السوشيال ميديا والتصميم ومواقع ووردبريس. نمّى جمهور فيستيفال لاند عجمان من 4 آلاف إلى 55 ألف متابع.",
-    ogLocale: "ar_AE",
+      "حسام عبدالفتاح، أخصائي تسويق رقمي وصناعة محتوى مقيم في السعودية بخبرة تزيد عن 6 سنوات في الإعلانات الممولة وإدارة السوشيال ميديا والتصميم ومواقع ووردبريس. نمّى جمهور فيستيفال لاند عجمان من 4 آلاف إلى 55 ألف متابع.",
+    ogLocale: "ar_SA",
     name: "حسام عبدالفتاح", first: "حسام", last: "عبدالفتاح",
     role: "أخصائي تسويق رقمي وصناعة محتوى",
     nav: { about: "عنّي", services: "الخدمات", work: "الأعمال", experience: "الخبرات", contact: "تواصل" },
     hire: "تواصل معي",
     skip: "تخطَّ إلى المحتوى",
     hero: {
-      eyebrow: "أخصائي تسويق رقمي وصناعة محتوى · الإمارات",
+      eyebrow: "أخصائي تسويق رقمي وصناعة محتوى · السعودية",
       title: ["أحوّل الأفكار إلى", "تجارب رقمية", "<em>تُنمّي العلامات التجارية.</em>"],
       sub: "أكثر من 6 سنوات في تخطيط الحملات الإعلانية الممولة، وصناعة المحتوى، وبناء المواقع، وتحويل اهتمام الجمهور إلى نتائج قابلة للقياس. وآخر إنجازاتي: تنمية جمهور فيستيفال لاند عجمان من 4 آلاف إلى 55 ألف متابع خلال 12 شهرًا.",
       cta1: "شاهد أعمالي", cta2: "تحميل السيرة الذاتية",
       badge: "متاح لفرص عمل جديدة",
       photoAlt: "حسام عبدالفتاح، أخصائي تسويق رقمي، مبتسمًا ببدلة كحلية وربطة عنق زرقاء",
       award: "موظف العام", awardYear: "2025",
-      capLoc: "عجمان، الإمارات", capRole: "تسويق رقمي وإبداع", capName: "حسام عبدالفتاح",
+      capLoc: "المملكة العربية السعودية", capRole: "تسويق رقمي وإبداع", capName: "حسام عبدالفتاح",
     },
     brandsLabel: "علامات تجارية عملت معها",
     stats: [
@@ -255,7 +255,7 @@ export const content = {
         "أجمع بين الاستراتيجية والإبداع والتقنية — من الإعلانات الممولة والسوشيال ميديا إلى المحتوى والتصميم والمواقع — وأقيس كل شيء بالنتائج، مع مواكبة دائمة لأحدث المنصات وأدوات الذكاء الاصطناعي.",
       ],
       facts: [
-        ["المقر", "عجمان، الإمارات"],
+        ["المقر", "المملكة العربية السعودية"],
         ["أعمل حاليًا في", "فيستيفال لاند عجمان"],
         ["المؤهل", "بكالوريوس تقنية المعلومات"],
         ["اللغات", "العربية · الإنجليزية"],

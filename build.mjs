@@ -55,7 +55,7 @@ function jsonLd(c) {
     image: `${SITE.url}${IMG}husam-suit.webp`,
     email: `mailto:${SITE.email}`,
     telephone: SITE.phone,
-    address: { "@type": "PostalAddress", addressLocality: "Ajman", addressCountry: "AE" },
+    address: { "@type": "PostalAddress", addressCountry: "SA" },
     worksFor: { "@type": "Organization", name: "Festival Land Ajman", url: "https://festivalland.ae/" },
     alumniOf: { "@type": "CollegeOrUniversity", name: "Sudan Academy for Banking & Financial Sciences" },
     award: "Employee of the Year 2025 — Festival Land Ajman",
@@ -82,7 +82,7 @@ function render(c) {
   const fonts = isAr
     ? "https://fonts.googleapis.com/css2?family=Anton&family=Cairo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap"
     : "https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap";
-  const og = `${SITE.url}/assets/og-${c.lang}.jpg?v=3`;
+  const og = `${SITE.url}/assets/og-${c.lang}.jpg?v=4`;
   const N = c.nav;
 
   const stats = c.stats
