@@ -71,7 +71,7 @@ function jsonLd(c) {
     url: SITE.url + c.path,
     name: c.title,
     inLanguage: c.lang,
-    dateModified: new Date().toISOString().replace(/.d{3}Z$/, "+00:00"),
+    dateModified: new Date().toISOString().slice(0, 19) + "+00:00",
     mainEntity: { "@id": `${SITE.url}/#person` },
   };
   return `<script type="application/ld+json">${JSON.stringify([person, page])}</script>`;
