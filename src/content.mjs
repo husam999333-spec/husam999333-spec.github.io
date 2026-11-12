@@ -7,7 +7,7 @@ export const SITE = {
   whatsapp: "971558726441",
   whatsappDisplay: "+971 55 872 6441",
   linkedin: "https://www.linkedin.com/in/husam-abd-alfattah-a73365259/",
-  cv: "/assets/Husam-Abd-Alfattah-CV.pdf",
+  cv: "/assets/Husam-Abdelfatah-CV.pdf",
   festivalIg: "https://www.instagram.com/ajman_festivalland/",
   bariqIg: "https://www.instagram.com/bariq_44/",
   igPosts: ["DYuYT4kDIJL", "DW3qS_aloeO", "DWEwn_jAVRH", "DWExZFBDKD0", "DWEvINQjrho", "DU3cKl1DlyQ", "DSfwdR-k4Zy", "DRsIvsrk-n0"],
