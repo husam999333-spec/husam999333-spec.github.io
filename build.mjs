@@ -272,8 +272,8 @@ ${jsonLd(c)}
     <figure class="hero-pic print">
       <div class="print-box"><span class="print-frame" aria-hidden="true"></span>
       <div class="print-photo"><img src="${IMG}husam-suit.webp" alt="${esc(c.hero.photoAlt)}" width="690" height="862" fetchpriority="high"></div></div>
+      <div class="award-chip">${icon("award")}<span><b>${c.hero.award}</b><small>${c.hero.awardOrg} · ${c.hero.awardYear}</small></span></div>
       <figcaption class="print-cap"><span>${c.hero.capLoc}</span><span class="on">${c.hero.capRole}</span></figcaption>
-      <div class="award-chip">${icon("award")}<span><b>${c.hero.award}</b><small>Festival Land Ajman · ${c.hero.awardYear}</small></span></div>
     </figure>
   </div>
   <div class="wrap"><ul class="stats">${stats}</ul></div>
@@ -393,7 +393,7 @@ ${jsonLd(c)}
 
 <div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
   <button class="lb-x" aria-label="${c.lightboxClose}">${icon("close")}</button>
-  <figure><img alt=""><figcaption></figcaption></figure>
+  <figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt=""><figcaption></figcaption></figure>
 </div>
 <script src="/assets/js/main.js?v=${jsV}" defer></script>
 </body>
