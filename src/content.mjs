@@ -52,7 +52,7 @@ export const content = {
       ],
       facts: [
         ["Based in", "Saudi Arabia"],
-        ["Currently", "Festival Land Ajman"],
+        ["Status", "Open to new opportunities"],
         ["Background", "B.Sc. Information Technology"],
         ["Languages", "Arabic · English"],
       ],
@@ -160,7 +160,7 @@ export const content = {
       title: "Where I've <em>made an impact.</em>",
       jobs: [
         {
-          when: "2023 — Present", role: "Digital Marketing Specialist", org: "Festival Land Ajman", where: "Ajman, UAE",
+          when: "2023 — 2026", role: "Digital Marketing Specialist", org: "Festival Land Ajman", where: "Ajman, UAE",
           badge: "Employee of the Year 2025",
           link: { href: "https://www.instagram.com/ajman_festivalland/", label: "@ajman_festivalland" },
           points: [
@@ -256,7 +256,7 @@ export const content = {
       ],
       facts: [
         ["المقر", "المملكة العربية السعودية"],
-        ["أعمل حاليًا في", "فيستيفال لاند عجمان"],
+        ["الحالة", "متاح لفرص عمل جديدة"],
         ["المؤهل", "بكالوريوس تقنية المعلومات"],
         ["اللغات", "العربية · الإنجليزية"],
       ],
@@ -364,7 +364,7 @@ export const content = {
       title: "أين <em>صنعت الفرق.</em>",
       jobs: [
         {
-          when: "2023 — حتى الآن", role: "أخصائي تسويق رقمي", org: "فيستيفال لاند عجمان", where: "عجمان، الإمارات",
+          when: "2023 — 2026", role: "أخصائي تسويق رقمي", org: "فيستيفال لاند عجمان", where: "عجمان، الإمارات",
           badge: "موظف العام 2025",
           link: { href: "https://www.instagram.com/ajman_festivalland/", label: "@ajman_festivalland" },
           points: [

@@ -56,7 +56,6 @@ function jsonLd(c) {
     email: `mailto:${SITE.email}`,
     telephone: SITE.phone,
     address: { "@type": "PostalAddress", addressCountry: "SA" },
-    worksFor: { "@type": "Organization", name: "Festival Land Ajman", url: "https://festivalland.ae/" },
     alumniOf: { "@type": "CollegeOrUniversity", name: "Sudan Academy for Banking & Financial Sciences" },
     award: "Employee of the Year 2025 — Festival Land Ajman",
     knowsAbout: c.knowsAbout,
